@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caissie Cape Oasis | Premium Aesthetics</title>
+    <meta name="description"
+        content="Welcome to Caissie Cape Oasis, where we specialize in providing personalized and rejuvenating esthetic services.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png"
+        href="https://firebasestorage.googleapis.com/v0/b/quasar-erp-b26d5.firebasestorage.app/o/demos%2Fimages%2F1771946786004_Group9451.png?alt=media&token=e9717af3-855c-46e0-b039-54c8d7e0e2ab"
+        class="demo-logo-icon">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Compact Mobile Top Bar -->
+    <div class="mobile-top-bar">
+        <a href="#" style="text-decoration:none; display:flex; align-items:center; color:inherit; gap: 0.5rem;"
+            class="mobile-logo-link">
+            <img src="https://firebasestorage.googleapis.com/v0/b/quasar-erp-b26d5.firebasestorage.app/o/demos%2Fimages%2F1771946786004_Group9451.png?alt=media&token=e9717af3-855c-46e0-b039-54c8d7e0e2ab"
+                alt="Logo" class="nav-logo" style="height:48px;">
+        </a>
+        <div style="display:flex; align-items:center; gap: 0.5rem; flex-wrap:nowrap;">
+            <a href="tel:5065316929" class="mobile-call-btn demo-phone-href" aria-label="Call Us"
+                style="text-decoration:none; color:var(--color-primary); font-weight:600; font-size:0.85rem; white-space:nowrap;">
+                <span class="demo-phone">(506) 531-6929</span>
+            </a>
+            <div class="lang-toggle-mobile" style="flex-shrink:0;">
+                <button class="lang-opt active" onclick="setLanguage('en')">EN</button>
+                <button class="lang-opt" onclick="setLanguage('fr')">FR</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="brand">
+                <img src="https://firebasestorage.googleapis.com/v0/b/quasar-erp-b26d5.firebasestorage.app/o/demos%2Fimages%2F1771946786004_Group9451.png?alt=media&token=e9717af3-855c-46e0-b039-54c8d7e0e2ab"
+                    alt="Caissie Cape Oasis Logo" class="demo-logo" style="height: 50px;">
+                <span class="demo-clinic-name" style="display:none;">Caissie Cape Oasis</span>
+            </a>
+            <div class="nav-links">
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#team" data-i18n="nav.team">Team</a>
+                <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+                <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+
+                <a href="tel:5065316929" class="demo-phone-href nav-phone"
+                    style="display:inline-flex; align-items:center; gap:5px; font-weight:600;">
+                    <span class="material-icons" style="font-size:16px;">phone</span>
+                    <span class="demo-phone">(506)531-6929</span>
+                </a>
+                <a href="#contact" class="btn-primary" data-i18n="nav.book">Book Consultation</a>
+
+                <!-- Desktop Lang Toggle -->
+                <div class="lang-toggle">
+                    <button class="lang-opt active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-opt" onclick="setLanguage('fr')">FR</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-split">
+            <div class="hero-text">
+                <div class="hero-content">
+                    <span class="eyebrow demo-clinic-name">Caissie Cape Oasis</span>
+                    <h1 class="demo-hero-headline" data-i18n="hero.h1">Laser hair removal and skincare in Grande Digue,
+                        NB</h1>
+                    <p class="demo-hero-subhead" data-i18n="hero.subhead">Step into a calm coastal oasis for
+                        comfortable, results-driven treatments designed around you—from first visit to final glow.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-primary-large">
+                            <span class="demo-hero-cta" data-i18n="hero.cta">Book your session</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1702312721918-62235a0b77d2?q=80&w=1101&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Luxury Clinic Interior" class="demo-hero-image">
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-i18n="services.title">Our Expertise</h2>
+                <div class="divider"></div>
+                <p data-i18n="services.subtitle">Curated treatments for the discerning individual.</p>
+            </div>
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="card-image"><img
+                            src="https://static.wixstatic.com/media/11062b_ee2853e2a4084f70bb54ba45d37a5da2~mv2.jpeg/v1/crop/x_268,y_0,w_5083,h_3745/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Machine%20cosmetology.jpeg"
+                            alt="Body Hair Removal"></div>
+                    <div class="card-content">
+                        <h3 data-i18n="services.item1.title">Body Hair Removal</h3>
+                        <p data-i18n="services.desc">Premium aesthetic solution tailored for your exact needs.</p>
+                        <a href="#contact" class="text-link" data-i18n="services.book">Book Now</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-image"><img
+                            src="https://static.wixstatic.com/media/11062b_7d86337507fb4845822760f67de72339~mv2.jpg/v1/crop/x_238,y_0,w_4523,h_3333/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/manicure%20pedicure.jpg"
+                            alt="Hands & Feet"></div>
+                    <div class="card-content">
+                        <h3 data-i18n="services.item2.title">Hands & Feet</h3>
+                        <p data-i18n="services.desc">Premium aesthetic solution tailored for your exact needs.</p>
+                        <a href="#contact" class="text-link" data-i18n="services.book">Book Now</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-image"><img
+                            src="https://static.wixstatic.com/media/dacd52b614a644b194d59f707251745f.jpg/v1/crop/x_0,y_47,w_7216,h_5317/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Facial.jpg"
+                            alt="Facials"></div>
+                    <div class="card-content">
+                        <h3 data-i18n="services.item3.title">Facials</h3>
+                        <p data-i18n="services.desc">Premium aesthetic solution tailored for your exact needs.</p>
+                        <a href="#contact" class="text-link" data-i18n="services.book">Book Now</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-image"><img
+                            src="https://static.wixstatic.com/media/11062b_65c68dd9177b4c2b8edadd5ec6335e07~mv2_d_7187_4912_s_4_2.jpg/v1/crop/x_260,y_0,w_6666,h_4912/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Long%20Lashes.jpg"
+                            alt="Eyelash"></div>
+                    <div class="card-content">
+                        <h3 data-i18n="services.item4.title">Eyelash</h3>
+                        <p data-i18n="services.desc">Premium aesthetic solution tailored for your exact needs.</p>
+                        <a href="#contact" class="text-link" data-i18n="services.book">Book Now</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-image"><img
+                            src="https://static.wixstatic.com/media/11062b_23b5f6d106c441e6afd15c0a733324fb~mv2.jpg/v1/crop/x_0,y_160,w_3271,h_2410/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Massage%20Therapy%20Session.jpg"
+                            alt="Relaxation Massage"></div>
+                    <div class="card-content">
+                        <h3 data-i18n="services.item5.title">Relaxation Massage</h3>
+                        <p data-i18n="services.desc">Premium aesthetic solution tailored for your exact needs.</p>
+                        <a href="#contact" class="text-link" data-i18n="services.book">Book Now</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-image"><img
+                            src="https://chezmoi.com.sg/wp-content/uploads/2024/05/Sharplight-Anti-Acne.png"
+                            alt="Advance Medical"></div>
+                    <div class="card-content">
+                        <h3 data-i18n="services.item6.title">Advance Medical</h3>
+                        <p data-i18n="services.desc">Premium aesthetic solution tailored for your exact needs.</p>
+                        <a href="#contact" class="text-link" data-i18n="services.book">Book Now</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding bg-alt">
+        <div class="container">
+            <div class="split-layout reverse-mobile">
+                <div class="split-image">
+                    <img src="https://images.unsplash.com/photo-1532009877282-3340270e0529?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Clinic Atmosphere" class="demo-about-image">
+                </div>
+                <div class="split-text">
+                    <span class="eyebrow" data-i18n="about.eyebrow">Who We Are</span>
+                    <h2 id="demo-about-title" data-i18n="about.title">A Sanctuary for Your Skin</h2>
+                    <div id="demo-about-text">
+                        <p data-i18n="about.p1">Welcome to Caissie Cape Oasis, where we specialize in providing
+                            personalized and rejuvenating esthetic services.</p>
+                        <p data-i18n="about.p2">Our mission is to enhance your natural beauty and promote wellness
+                            through our range of treatments.</p>
+                    </div>
+                    <a href="#gallery" class="btn-secondary" data-i18n="about.gallery">View Our Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section-padding" style="background-color: var(--color-bg);">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="eyebrow" data-i18n="team.eyebrow">The Experts</span>
+                <h2 data-i18n="team.title">Meet Our Team</h2>
+                <div class="divider text-center"></div>
+                <p data-i18n="team.subtitle">Dedicated professionals passionate about your wellness.</p>
+            </div>
+            <div class="team-grid">
+                <article class="team-card">
+                    <div class="team-image">
+                        <img src="images/christine.png" alt="Christine">
+                    </div>
+                    <div class="team-content">
+                        <h3>Christine</h3>
+                        <p class="team-role" data-i18n="team.christine.role">Esthetician & Laser Specialist</p>
+                        <p data-i18n="team.christine.bio">Christine is a proud Caissie Cape local, born and raised with
+                            strong roots in the community she loves. With more than 18 years of experience in the beauty
+                            industry, she’s a passionate and dedicated esthetician specializing in painless laser hair
+                            removal, waxing, and sugaring. As a mom of three, she adores her kids and balances her
+                            family life with a deep passion for helping women feel confident, comfortable, and amazing
+                            in their own skin. Having personally struggled with ingrown hairs, Christine is devoted to
+                            offering real solutions that make a difference. Her warm, caring approach shines through in
+                            every service she provides, including manicures, pedicures, facials, and radio frequency
+                            skin treatments. For Christine, there's nothing more fulfilling than combining her love of
+                            home, family, and beauty to uplift and empower the women around her.</p>
+                    </div>
+                </article>
+                <article class="team-card">
+                    <div class="team-image">
+                        <img src="images/franki-may.png" alt="Franki-May">
+                    </div>
+                    <div class="team-content">
+                        <h3>Franki-May</h3>
+                        <p class="team-role" data-i18n="team.franki.role">Medical Aesthetician</p>
+                        <p data-i18n="team.franki.bio">Franki, is a certified Medical Aesthetician with a big heart, a
+                            steady hand, and a serious passion for helping people feel confident in their skin. Whether
+                            it’s a rejuvenating facial, precise waxing, or a full glam moment with nails, I bring a mix
+                            of clinical care and feel-good vibes to every treatment. I believe skincare should be just
+                            as fun as it is effective so get ready for results and a few laughs along the way. My goal?
+                            To make you feel amazing the second you walk in and even better when you walk out. When I’m
+                            not in the treatment room, I’m always learning the latest techniques, perfecting my craft,
+                            and staying ahead of the trends to give you nothing but the best. I’m all about creating a
+                            safe, welcoming space where you can relax, recharge, and leave glowing, inside and out.
+                            Kindness is my language. Skin is my passion. And making people feel confident, That’s my
+                            superpower. Let’s make magic together. Book your self-care session, I can’t wait to meet
+                            you!</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-padding bg-alt">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 id="demo-template-gallery-title" data-i18n="gallery.title">The Caissie Cape Oasis Experience</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid" id="demo-template-gallery">
+                <div class="gallery-item large"
+                    onclick="openGalleryModal('https://firebasestorage.googleapis.com/v0/b/quasar-erp-b26d5.firebasestorage.app/o/demos%2Fimages%2F1771955894939_manicurepedicure.jpg?alt=media&token=8cb00cc2-58a8-42c2-a304-dcea328fe1af')">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/quasar-erp-b26d5.firebasestorage.app/o/demos%2Fimages%2F1771955894939_manicurepedicure.jpg?alt=media&token=8cb00cc2-58a8-42c2-a304-dcea328fe1af"
+                        alt="Gallery Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews section-padding bg-rose-gradient">
+        <div class="container small-container">
+            <div class="section-header text-center">
+                <h2 data-i18n="reviews.title">Client Testimonials</h2>
+                <div class="divider text-center"></div>
+            </div>
+            <div class="review-slider" id="demo-template-reviews">
+                <div class="review-card text-center">
+                    <div class="stars">★★★★★</div>
+                    <blockquote data-i18n="reviews.q1">"Great experience, very soothing and professional."</blockquote>
+                    <cite>- Monica R.</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info-panel" style="flex: 1; text-align: center;">
+                    <h2 data-i18n="contact.title">Get in Touch</h2>
+                    <p data-i18n="contact.subtitle">Start your transformation today.</p>
+                    <ul class="contact-details" style="display: inline-block; text-align: left; margin: 30px auto;">
+                        <li>
+                            <span class="material-icons">call</span>
+                            <div>
+                                <strong data-i18n="contact.phone">Phone</strong>
+                                <a href="tel:5065316929" class="demo-phone-href demo-phone">(506)531-6929</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="material-icons">location_on</span>
+                            <div>
+                                <strong data-i18n="contact.addressTitle">Address</strong>
+                                <span class="demo-address">1002 Route 530 Grande Digue N.B E4R 5K8</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="hours" style="margin-top: 20px;">
+                        <h4><span class="material-icons"
+                                style="font-size: 1.1rem; vertical-align: middle; margin-right: 6px; position:relative; top:-2px;">schedule</span>
+                            <span data-i18n="contact.hours">Hours</span>
+                        </h4>
+                        <p><span data-i18n="contact.h1">Mon - Fri: 9am - 7pm</span><br><span data-i18n="contact.h2">Sat:
+                                10am - 4pm</span><br><span data-i18n="contact.h3">Sun: Closed</span></p>
+                    </div>
+                    <div class="demo-embed-map-container"
+                        style="margin-top: 40px; border-radius: 8px; overflow: hidden; height: 300px; background: rgba(0,0,0,0.05); text-align:center; position:relative;">
+                        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=1002%20Route%20530%20Grande%20Digue%20N.B%20E4R%205K8&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                    <a href="https://maps.google.com/maps?daddr=1002%20Route%20530%20Grande%20Digue%20N.B%20E4R%205K8"
+                        target="_blank" class="btn-primary"
+                        style="margin-top:20px; display:inline-flex; align-items:center; gap:8px;">
+                        <span class="material-icons">directions</span> <span data-i18n="contact.directions">Get
+                            Directions</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/quasar-erp-b26d5.firebasestorage.app/o/demos%2Fimages%2F1771946786004_Group9451.png?alt=media&token=e9717af3-855c-46e0-b039-54c8d7e0e2ab"
+                        alt="Logo" class="footer-logo demo-logo">
+                    <p data-i18n="footer.desc">Excellence in every detail.</p>
+                </div>
+                <div class="footer-col">
+                    <h4><span class="material-icons" style="font-size: 1.2rem;">menu</span> <span
+                            data-i18n="footer.menu">Menu</span></h4>
+                    <ul>
+                        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                        <li><a href="#about" data-i18n="nav.about">About</a></li>
+                        <li><a href="#team" data-i18n="nav.team">Team</a></li>
+                        <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><span class="material-icons" style="font-size: 1.2rem;">gavel</span> <span
+                            data-i18n="footer.legal">Legal</span></h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><span class="material-icons" style="font-size: 1.2rem;">hub</span> <span
+                            data-i18n="footer.connect">Connect</span></h4>
+                    <ul class="contact-details" style="margin-top: 0; margin-bottom: 0;">
+                        <li style="margin-bottom: 10px;">
+                            <span class="material-icons" style="font-size: 1rem; margin-top: 3px;">call</span>
+                            <a href="tel:5065316929" class="demo-phone-href demo-phone">(506)531-6929</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 <span class="demo-clinic-name">Caissie Cape Oasis</span>. <span
+                        data-i18n="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Premium Mobile Bottom Bar -->
+    <div class="mobile-bottom-bar premium-bottom-bar">
+        <button class="bottom-bar-item mobile-toggle-btn" onclick="togglePremiumMobileMenu()" aria-label="Toggle Menu">
+            <div class="premium-burger-icon">
+                <span class="bar top-bar"></span>
+                <span class="bar middle-bar"></span>
+                <span class="bar bottom-bar"></span>
+            </div>
+            <span class="burger-label"
+                style="font-size: 10px; margin-top: 4px; font-weight: 500; letter-spacing: 0.5px;"
+                data-i18n="mobile.menu">MENU</span>
+        </button>
+        <a href="tel:5065316929" class="bottom-bar-item demo-phone-href" aria-label="Call Us">
+            <span class="material-icons" style="font-size: 22px;">phone_in_talk</span>
+            <span style="font-size: 10px; margin-top: 4px; font-weight: 500; letter-spacing: 0.5px;"
+                data-i18n="mobile.call">CALL</span>
+        </a>
+        <a href="#contact" class="bottom-bar-item" aria-label="Message Us">
+            <span class="material-icons" style="font-size: 22px;">location_on</span>
+            <span style="font-size: 10px; margin-top: 4px; font-weight: 500; letter-spacing: 0.5px;"
+                data-i18n="mobile.location">LOCATION</span>
+        </a>
+    </div>
+
+    <!-- Premium Mobile Overlay Menu -->
+    <div id="premium-mobile-menu" class="premium-mobile-menu">
+        <div class="menu-content">
+            <img src="https://firebasestorage.googleapis.com/v0/b/quasar-erp-b26d5.firebasestorage.app/o/demos%2Fimages%2F1771946786004_Group9451.png?alt=media&token=e9717af3-855c-46e0-b039-54c8d7e0e2ab"
+                alt="Logo" class="demo-logo mobile-logo"
+                style="height: 60px; max-width: 80%; object-fit: contain; filter: brightness(0) invert(1);">
+            <nav class="mobile-nav-links">
+                <a href="#services" onclick="togglePremiumMobileMenu()" data-i18n="nav.services">Services</a>
+                <a href="#about" onclick="togglePremiumMobileMenu()" data-i18n="nav.about">About</a>
+                <a href="#team" onclick="togglePremiumMobileMenu()" data-i18n="nav.team">Team</a>
+                <a href="#reviews" onclick="togglePremiumMobileMenu()" data-i18n="nav.reviews">Reviews</a>
+                <a href="#gallery" onclick="togglePremiumMobileMenu()" data-i18n="nav.gallery">Gallery</a>
+                <a href="#contact" onclick="togglePremiumMobileMenu()" data-i18n="nav.contact">Contact & Location</a>
+            </nav>
+            <div class="mobile-menu-footer">
+                <a href="tel:5065316929" class="demo-phone-href btn-secondary-large"
+                    style="width: 100%; text-align: center; margin-bottom: 15px; border-color: rgba(255,255,255,0.2); color: #fff;">
+                    <span class="material-icons"
+                        style="vertical-align: middle; margin-right: 5px; font-size: 18px;">phone_in_talk</span> <span
+                        class="demo-phone" data-i18n="mobile.callToday">Call Us Today</span>
+                </a>
+                <a href="#contact" class="btn-primary-large block" style="width: 100%; text-align: center;"
+                    onclick="togglePremiumMobileMenu()" data-i18n="nav.book">Book Consultation</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Gallery Modal -->
+    <div id="gallery-modal" onclick="closeGalleryModal()"
+        style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.9); z-index:100000; justify-content:center; align-items:center; cursor:zoom-out;">
+        <span class="material-icons"
+            style="position:absolute; top:20px; right:20px; color:#fff; font-size:30px; cursor:pointer;">close</span>
+        <img id="gallery-modal-img" src="" alt="Full size image"
+            style="max-width:90%; max-height:90%; object-fit:contain; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+    </div>
+
+    <script>
+        window.openGalleryModal = function (url) {
+            const modal = document.getElementById('gallery-modal');
+            const img = document.getElementById('gallery-modal-img');
+            img.src = url;
+            modal.style.display = 'flex';
+        }
+        window.closeGalleryModal = function () {
+            document.getElementById('gallery-modal').style.display = 'none';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
