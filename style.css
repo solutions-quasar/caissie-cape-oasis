@@ -141,6 +141,14 @@ ul {
     margin: var(--spacing-sm) auto var(--spacing-md);
 }
 
+.desktop-only {
+    display: initial;
+}
+
+.mobile-only {
+    display: none;
+}
+
 /* Buttons */
 .btn-primary,
 .btn-primary-large {
@@ -567,6 +575,28 @@ ul {
     flex: 1;
 }
 
+/* Team Read More Logic */
+.bio-more-text {
+    display: none;
+}
+
+.bio-read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 0;
+    margin-top: 5px;
+    font-size: 0.95rem;
+}
+
+p.expanded .bio-more-text {
+    display: inline;
+}
+
 @media (min-width: 992px) {
     .team-grid {
         display: flex;
@@ -589,6 +619,14 @@ ul {
         flex: 1;
         padding: 50px;
         justify-content: center;
+    }
+
+    .bio-more-text {
+        display: inline !important;
+    }
+
+    .bio-read-more-btn {
+        display: none !important;
     }
 }
 
@@ -621,19 +659,11 @@ ul {
 }
 
 /* Reviews */
-.review-slider {
+.review-grid {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    flex-wrap: wrap;
     gap: 30px;
-    padding-bottom: 20px;
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-.review-slider::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari, Edge */
+    justify-content: center;
 }
 
 .review-card {
@@ -991,6 +1021,14 @@ cite {
         cursor: pointer;
     }
 
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: initial !important;
+    }
+
     .mobile-toggle span {
         display: block;
         width: 25px;
@@ -1029,6 +1067,15 @@ cite {
     .contact-form-panel {
         padding: 30px 0;
         /* Let the form widget take full width inside the 12px container */
+    }
+
+    .demo-embed-map-container {
+        min-height: 450px !important;
+        height: 450px !important;
+    }
+
+    .demo-embed-map-container iframe {
+        height: 450px !important;
     }
 
     /* Override inline padding for the widget to maximize mobile space */
