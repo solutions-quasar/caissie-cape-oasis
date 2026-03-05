@@ -48,24 +48,21 @@ const TRANSLATIONS = {
     'nav.gallery': { en: 'Gallery', fr: 'Galerie' },
     'nav.book': { en: 'Book Consultation', fr: 'Réserver' },
     'nav.contact': { en: 'Contact & Location', fr: 'Contact & Emplacement' },
+    'topbar.book': { en: 'Book Now', fr: 'Réserver' },
     'hero.h1': {
+        en: '<span class="desktop-only">Laser hair removal and skincare in Grande Digue, NB</span><span class="mobile-only">Laser hair removal and skincare</span>',
+        fr: '<span class="desktop-only">Épilation au laser et soins de la peau à Grande-Digue, NB</span><span class="mobile-only">Épilation au laser et soins de la peau</span>'
+    },
+    'hero.location': {
         en: `
-            <span class="desktop-only">Laser hair removal and skincare in Grande Digue, NB</span>
-            <span class="mobile-only">
-                Laser hair removal and skincare
-                <div style="font-size: 1.25rem; font-weight: 500; margin-top: 10px; display: flex; align-items: center; justify-content: flex-start; gap: 8px;">
-                    <span class="material-icons" style="font-size: 1.25rem;">location_on</span> Grande-Digue NB
-                </div>
-            </span>
+            <div style="font-size: 1.1rem; font-weight: 500; display: flex; align-items: center; gap: 8px;">
+                <span class="material-icons" style="font-size: 1.2rem;">location_on</span> Grande-Digue NB
+            </div>
         `,
         fr: `
-            <span class="desktop-only">Épilation au laser et soins de la peau à Grande-Digue, NB</span>
-            <span class="mobile-only">
-                Épilation au laser et soins de la peau
-                <div style="font-size: 1.25rem; font-weight: 500; margin-top: 10px; display: flex; align-items: center; justify-content: flex-start; gap: 8px;">
-                    <span class="material-icons" style="font-size: 1.25rem;">location_on</span> Grande-Digue NB
-                </div>
-            </span>
+            <div style="font-size: 1.1rem; font-weight: 500; display: flex; align-items: center; gap: 8px;">
+                <span class="material-icons" style="font-size: 1.2rem;">location_on</span> Grande-Digue NB
+            </div>
         `
     },
     'hero.subhead': {
