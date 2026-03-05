@@ -319,7 +319,7 @@
     <section id="contact" class="contact section-padding">
         <div class="container">
             <div class="contact-wrapper">
-                <div class="contact-info-panel" style="flex: 1; text-align: center;">
+                <div class="contact-info-panel demo-contact-card" style="flex: 1; text-align: center;">
                     <h2 data-i18n="contact.title">Get in Touch</h2>
                     <p data-i18n="contact.subtitle">Start your transformation today.</p>
                     <ul class="contact-details" style="display: inline-block; text-align: left; margin: 30px auto;">
@@ -346,18 +346,24 @@
                         <p><span data-i18n="contact.h1">Mon - Fri: 9am - 7pm</span><br><span data-i18n="contact.h2">Sat:
                                 10am - 4pm</span><br><span data-i18n="contact.h3">Sun: Closed</span></p>
                     </div>
+                </div>
+
+                <div class="contact-map-panel demo-contact-card"
+                    style="flex: 1; display: flex; flex-direction: column;">
                     <div class="demo-embed-map-container"
-                        style="margin-top: 40px; border-radius: 8px; overflow: hidden; height: 300px; background: rgba(0,0,0,0.05); text-align:center; position:relative;">
+                        style="flex: 1; min-height: 350px; background: rgba(0,0,0,0.05); text-align:center; position:relative;">
                         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0"
                             marginwidth="0"
                             src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=1002%20Route%20530%20Grande%20Digue%20N.B%20E4R%205K8&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     </div>
-                    <a href="https://maps.google.com/maps?daddr=1002%20Route%20530%20Grande%20Digue%20N.B%20E4R%205K8"
-                        target="_blank" class="btn-primary"
-                        style="margin-top:20px; display:inline-flex; align-items:center; gap:8px;">
-                        <span class="material-icons">directions</span> <span data-i18n="contact.directions">Get
-                            Directions</span>
-                    </a>
+                    <div style="padding: 30px; text-align: center; background: var(--color-surface);">
+                        <a href="https://maps.google.com/maps?daddr=1002%20Route%20530%20Grande%20Digue%20N.B%20E4R%205K8"
+                            target="_blank" class="btn-primary"
+                            style="display:inline-flex; align-items:center; gap:8px;">
+                            <span class="material-icons">directions</span> <span data-i18n="contact.directions">Get
+                                Directions</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
