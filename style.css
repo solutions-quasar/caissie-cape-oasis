@@ -956,45 +956,50 @@ cite {
     }
 
     .hero-split:not(.theme-full) .hero-content {
-        background: transparent;
-        padding: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 40px 30px;
+        border-radius: 20px;
         text-shadow: none;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
         gap: 15px;
-        /* Spaces elements nicely instead of block margins */
+        width: 100%;
+        max-width: 600px;
     }
 
     .hero-text p,
     .hero-text h1,
     .hero-text .eyebrow {
-        color: var(--color-text);
-        text-shadow: none;
+        color: #FFFFFF;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin: 0;
-        /* Remove default margins as we use gap */
     }
 
     .hero-text .eyebrow,
     .hero-text h1 .mobile-only,
     .hero-text p .mobile-only {
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: transparent;
         display: inline;
-        padding: 4px 8px;
-        box-decoration-break: clone;
-        -webkit-box-decoration-break: clone;
-        border-radius: 4px;
-        line-height: 1.6;
+        padding: 0;
+        border-radius: 0;
+        line-height: inherit;
     }
 
     .hero-location-mobile.mobile-only {
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
         display: inline-flex;
-        padding: 6px 10px;
-        border-radius: 4px;
+        padding: 8px 12px;
+        border-radius: 6px;
         margin-top: 5px;
-        color: var(--color-text);
+        color: #FFFFFF;
         align-items: center;
     }
 
@@ -1022,7 +1027,7 @@ cite {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .navbar {
         display: none !important;
     }
@@ -1080,7 +1085,7 @@ cite {
     }
 
     .mobile-only {
-        display: initial !important;
+        display: block !important;
     }
 
     .mobile-toggle span {
@@ -1222,7 +1227,7 @@ cite {
 }
 
 /* --- Premium Mobile Overlay Menu --- */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .mobile-bottom-bar.premium-bottom-bar {
         display: flex;
         z-index: 100000;
@@ -1402,7 +1407,7 @@ cite {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 993px) {
     .premium-mobile-menu {
         display: none !important;
     }
@@ -1503,13 +1508,13 @@ cite {
     font-weight: 700;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 993px) {
     .mobile-top-bar {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .navbar {
         top: 60px;
         /* Offset for mobile top bar */
