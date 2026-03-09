@@ -882,7 +882,6 @@ cite {
 }
 
 .footer-logo {
-    filter: brightness(0) invert(1);
     /* Make logo white */
     width: 150px;
     margin-bottom: 20px;
